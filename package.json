@@ -1,0 +1,18 @@
+{
+  "name": "stock-server",
+  "version": "1.0.0",
+  "description": "A node server running expresses designed to serve scraped stock data to an Augmented Reality app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "flat-cache": "^1.3.0",
+    "memory-cache": "^0.2.0",
+    "redis": "^2.8.0",
+    "sqlite3": "^4.0.2"
+  }
+}
