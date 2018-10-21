@@ -38,7 +38,7 @@ let getArticle = (link) => {
 
   let date = $('.publication-date').text().trim()
 
-  date = moment(date, 'MMM D, YYYY at h:Ha').unix();
+  date = moment(date, 'MMM DD, YYYY at hh:mma').unix();
 
   let firstParagraph = article.find('p:first-of-type').text().trim()
 
@@ -49,4 +49,9 @@ let getArticle = (link) => {
     articleBody
   }
 
+}
+
+module.exports = {
+  getArticle,
+  getLinks
 }
